@@ -1,4 +1,17 @@
 SiTec::Application.routes.draw do
+  get "about/index"
+  get "about/SI_Touch"
+  get "welcome/Benefits"
+  get "welcome/Careers"
+  get "welcome/Contact_us"
+  resources :contacts
+
+  get "services/software"
+  get "services/visualization"
+  get "services/intergation"
+  get "services/Buisness_Analytics"
+  get "services/IT_Training"
+  get "services/index"
   get "contact/index"
   get "welcome/index"
   # The priority is based upon order of creation: first created -> highest priority.
